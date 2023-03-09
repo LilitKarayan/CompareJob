@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="JobComparison" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Ranked Job List" />
+
+    <!-- This is the RecyclerView -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="546dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/jobListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/compareJobsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compare" />
+
+
+</LinearLayout>
